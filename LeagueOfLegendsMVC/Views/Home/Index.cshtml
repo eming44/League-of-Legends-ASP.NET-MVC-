@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    @Styles.Render("~/Content/videoContainerStyle.css")
+    @Styles.Render("~/Content/downloadGame.css")
+</head>
+<body>
+    <div class="videoContainer">
+        <video autoplay muted id="videoKatarina" class="videoInContainer">
+            <source src="~/Resources/Death-Sworn-Katarina-Live-Wallpaper_Trim.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted id="videoEzreal" class="videoInContainer">
+            <source src="~/Resources/Pulsefire-Ezreal-Login-Screen-League-Of-Legends-Live-Wallpaper_Trim.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted id="videoSona" class="videoInContainer">
+            <source src="~/Resources/LoL-Odyssey-Sona-Live-Wallpaper_Trim.mp4" type="video/mp4">
+        </video>
+        <img src="~/Resources/League_of_legends_logo_transparent.png" alt="" id="imageLogo">
+    </div>
+
+    <div class="downloadGame">
+        <img src="~/Resources/image.jpg" alt="" id="secondWallpaper">
+    </div>
+    <div class="downloadGame2">
+        <hr class"blackLine">
+        <img src="~/Resources/image.jpg" alt="" id="secondWallpaper2">
+    </div>
+
+
+    @Scripts.Render("~/Scripts/videoContainer.js")
+</body>
+</html>
+
